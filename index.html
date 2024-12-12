@@ -16,8 +16,8 @@
     <body>
         <div class="cont background">
 
-            <p class="date">
-                Monday , December 12
+            <p class="date" id="date">
+                <!-- Monday , December 12 -->
             </p>
 
             <h1 class="city" id="cityName">
@@ -29,7 +29,7 @@
                 <div class="aqi-cont aqi-cont-common">
                     <p class="aqi-head">AQI</p>
                     <p class="aqi" id="aqiValue">4</p>
-                    <p class="cond">
+                    <p class="cond" id="condition">
                         Good
                     </p>
                 </div>
@@ -59,18 +59,18 @@
             <div class="comp-cont">
                 <div class="a-left">
                     <div class="a-left-top">
-                        <div class="ph-1"><span class="ph-head">ph : </span>
+                        <div class="ph-1"><span class="ph-head">pm2.5 : </span>
                             <span class="ph-val" id="phValue1">
                                 2345</span></div>
-                        <div class="ph-2"><span class="ph-head">ph : </span>
-                            <span class="ph-val" id="phValue1">
+                        <div class="ph-2"><span class="ph-head">pm10 : </span>
+                            <span class="ph-val" id="phValue2">
                                 2345</span></div>
                     </div>
                     <div class="a-left-bottom">
                         <div class="a-left-bottom-top">
                             <div class="a-comp"><span class="comp-head"> Carbon
                                     Monoxide </span><span
-                                    class="comp-val" id="co">560</span></div>
+                                        class="comp-val" id="co">560</span></div>
                             <div class="a-comp"><span class="comp-head"> Nitric
                                     Acid </span><span
                                     class="comp-val" id="no">0</span></div>
@@ -78,9 +78,9 @@
                                     Nitrogen Dioxide </span><span
                                     class="comp-val" id="no2">7.71</span></div>
                             <div class="a-comp"><span
-                                    class="comp-head" id="o3">Trioxygen
+                                    class="comp-head" >Trioxygen
                                 </span><span
-                                    class="comp-val">114</span></div>
+                                    class="comp-val" id="o3">114</span></div>
                             <div class="a-comp"><span class="comp-head"> Sulfur
                                     Dioxide </span><span
                                     class="comp-val" id="so2">6.97</span></div>
