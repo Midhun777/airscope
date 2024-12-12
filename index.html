@@ -16,14 +16,16 @@
     <body>
         <div class="cont background">
 
-            <p class="date" id="date">
-                <!-- Monday , December 12 -->
-            </p>
-
+            <div class="top-main">
+                <p class="date" id="date"></p>
+                <input type="text" placeholder="Enter city name to search..."
+                    class="searchBox" id="searchBox">
+                <button class="search-btn" id="searchButton"><i
+                        class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
             <h1 class="city" id="cityName">
                 Kochi
             </h1>
-
             <div class="data-cont">
 
                 <div class="aqi-cont aqi-cont-common">
@@ -70,7 +72,7 @@
                         <div class="a-left-bottom-top">
                             <div class="a-comp"><span class="comp-head"> Carbon
                                     Monoxide </span><span
-                                        class="comp-val" id="co">560</span></div>
+                                    class="comp-val" id="co">560</span></div>
                             <div class="a-comp"><span class="comp-head"> Nitric
                                     Acid </span><span
                                     class="comp-val" id="no">0</span></div>
@@ -78,7 +80,7 @@
                                     Nitrogen Dioxide </span><span
                                     class="comp-val" id="no2">7.71</span></div>
                             <div class="a-comp"><span
-                                    class="comp-head" >Trioxygen
+                                    class="comp-head">Trioxygen
                                 </span><span
                                     class="comp-val" id="o3">114</span></div>
                             <div class="a-comp"><span class="comp-head"> Sulfur
@@ -99,7 +101,7 @@
                         <div class="w-comp"><span class="w-comp-head">Wind
                                 Speed</span><span
                                 class="w-comp-val" id="windSpeed">24
-                                <span>kmph</span> </span></div>
+                                <span></span> </span></div>
                     </div>
                     <div class="a-right-bottom"></div>
                 </div>
