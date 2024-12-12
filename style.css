@@ -62,6 +62,16 @@ i {
     background-color: #181d3d;
 }
 
+
+.aqi-cont{
+    position: relative;
+    left: 65px;
+}
+
+.w-cont{
+    position: relative;
+    left: 65px;
+}
 .aqi-head {
     font-size: 25px;
     font-weight: 600;
@@ -160,12 +170,13 @@ i {
 
 .a-comp {
     width: 150px;
-    height: 55px;
+    height: 60px;
     background-color: var(--card-bg);
     border-radius: 4px;
 }
 
 .a-left-bottom-top {
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -191,5 +202,10 @@ i {
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
+.comp-head{
+    margin-top: 7px;
+    margin-bottom: 3px;
+    font-weight: 500;
 }
