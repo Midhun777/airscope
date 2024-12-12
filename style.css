@@ -17,7 +17,7 @@ body {
     font-weight: 400;
     font-style: normal;
     background-color: #0e122b;
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 i {
@@ -63,15 +63,17 @@ i {
 }
 
 
-.aqi-cont{
+.aqi-cont {
     position: relative;
     left: 65px;
 }
 
-.w-cont{
+.w-cont {
+    width: 400px;
     position: relative;
-    left: 65px;
+    left: 35px;
 }
+
 .aqi-head {
     font-size: 25px;
     font-weight: 600;
@@ -87,10 +89,6 @@ i {
 .cond {
     font-size: 23px;
     margin-top: 10px;
-}
-
-.w-cont {
-    width: 400px;
 }
 
 .w-feel {
@@ -121,31 +119,25 @@ i {
     margin-top: 35px;
     width: 75%;
     height: 290px;
-    /* border: 1px solid white; */
     margin-left: calc(25%/2);
 }
 
 .a-left,
 .a-right {
     width: 50%;
-    /* border: 1px solid blue; */
 }
 
 .a-left-top {
     height: 60px;
-    /* height: 20%; */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* border: 1px solid green; */
-
 }
 
 .a-left-bottom {
     width: 100%;
     height: 100%;
-
 }
 
 .ph-1,
@@ -165,14 +157,14 @@ i {
 
 .ph-val {
     font-size: 1.15em;
-
 }
 
 .a-comp {
     width: 150px;
-    height: 60px;
+    height: 70px;
     background-color: var(--card-bg);
     border-radius: 4px;
+    margin: 15px 15px 15px 15px;
 }
 
 .a-left-bottom-top {
@@ -184,12 +176,10 @@ i {
 
 .a-left-bottom-bottom {
     border: 1px solid white;
-
 }
 
 .a-left-bottom-top,
 .a-left-bottom-bottom {
-    /* border: 1px solid white; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -204,8 +194,35 @@ i {
     justify-content: center;
 }
 
-.comp-head{
+.comp-head {
     margin-top: 7px;
-    margin-bottom: 3px;
+    margin-bottom: 7px;
     font-weight: 500;
+}
+
+.w-right-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.w-comp {
+    height: 70px;
+    width: 210px;
+    background-color: var(--card-bg);
+    border-radius: 4px;
+    text-align: center;
+}
+
+.w-comp-head,
+.w-comp-val {
+    display: block;
+    font-size: 1.05em;
+    font-weight: 500;
+}
+
+.w-comp-head {
+    font-size: 1.05em;
+    margin-top: 7px;
+    margin-bottom: 5px;
 }
