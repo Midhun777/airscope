@@ -20,7 +20,7 @@
                 Monday , December 12
             </p>
 
-            <h1 class="city">
+            <h1 class="city" id="cityName">
                 Kochi
             </h1>
 
@@ -28,7 +28,7 @@
 
                 <div class="aqi-cont aqi-cont-common">
                     <p class="aqi-head">AQI</p>
-                    <p class="aqi">4</p>
+                    <p class="aqi" id="aqiValue">4</p>
                     <p class="cond">
                         Good
                     </p>
@@ -38,15 +38,16 @@
                     <p class="aqi-head w-head">Weather</p>
                     <div class="w-split">
                         <div class="w-left">
-                            <p class="aqi weather">29°c</p>
-                            <p class="w-feel">Feels Like 26°c
+                            <p class="aqi weather" id="weatherValue">29°c</p>
+                            <p class="w-feel">Feels Like <span
+                                    id="feelsLike">26°c</span>
                             </p>
                         </div>
                         <div class="w-right">
                             <div class="w-img">
                                 <i class="fa-solid fa-cloud"></i>
                             </div>
-                            <p class="cond w-cond">
+                            <p class="cond w-cond" id="weatherCondition">
                                 Clear
                             </p>
                         </div>
@@ -58,24 +59,47 @@
             <div class="comp-cont">
                 <div class="a-left">
                     <div class="a-left-top">
-                        <div class="ph-1"><span class="ph-head">ph : </span> <span class="ph-val"> 2345</span></div>
-                        <div class="ph-2"><span class="ph-head">ph : </span> <span class="ph-val"> 2345</span></div>
-                     </div>
+                        <div class="ph-1"><span class="ph-head">ph : </span>
+                            <span class="ph-val" id="phValue1">
+                                2345</span></div>
+                        <div class="ph-2"><span class="ph-head">ph : </span>
+                            <span class="ph-val" id="phValue1">
+                                2345</span></div>
+                    </div>
                     <div class="a-left-bottom">
                         <div class="a-left-bottom-top">
-                            <div class="a-comp"><span class="comp-head"> Carbon Monoxide </span><span class="comp-val">560</span></div>
-                            <div class="a-comp"><span class="comp-head"> Nitric Acid </span><span class="comp-val">0</span></div>
-                            <div class="a-comp"><span class="comp-head"> Nitrogen Dioxide </span><span class="comp-val">7.71</span></div>
-                            <div class="a-comp"><span class="comp-head">Trioxygen </span><span class="comp-val">114</span></div>
-                            <div class="a-comp"><span class="comp-head"> Sulfur Dioxide </span><span class="comp-val">6.97</span></div>
-                            <div class="a-comp"><span class="comp-head"> Ammoia </span><span class="comp-val">13</span></div>
+                            <div class="a-comp"><span class="comp-head"> Carbon
+                                    Monoxide </span><span
+                                    class="comp-val" id="co">560</span></div>
+                            <div class="a-comp"><span class="comp-head"> Nitric
+                                    Acid </span><span
+                                    class="comp-val" id="no">0</span></div>
+                            <div class="a-comp"><span class="comp-head">
+                                    Nitrogen Dioxide </span><span
+                                    class="comp-val" id="no2">7.71</span></div>
+                            <div class="a-comp"><span
+                                    class="comp-head" id="o3">Trioxygen
+                                </span><span
+                                    class="comp-val">114</span></div>
+                            <div class="a-comp"><span class="comp-head"> Sulfur
+                                    Dioxide </span><span
+                                    class="comp-val" id="so2">6.97</span></div>
+                            <div class="a-comp"><span class="comp-head"> Ammoia
+                                </span><span class="comp-val"
+                                    id="nh3">13</span></div>
                         </div>
                     </div>
                 </div>
                 <div class="a-right">
                     <div class="w-right-top">
-                        <div class="w-comp"><span class="w-comp-head">Humidy</span><span class="w-comp-val">80%</span></div>
-                        <div class="w-comp"><span class="w-comp-head">Wind Speed</span><span class="w-comp-val">24kmph</span></div>
+                        <div class="w-comp"><span
+                                class="w-comp-head">Humidity</span><span
+                                class="w-comp-val"
+                                id="humidity">80%</span></div>
+                        <div class="w-comp"><span class="w-comp-head">Wind
+                                Speed</span><span
+                                class="w-comp-val" id="windSpeed">24
+                                <span>kmph</span> </span></div>
                     </div>
                     <div class="a-right-bottom"></div>
                 </div>
