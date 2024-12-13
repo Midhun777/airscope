@@ -31,16 +31,20 @@ function getData() {
         lat = data.coord.lat;
         lon = data.coord.lon;
 
+        console.log(lat)
+        console.log(lon)
+
         return lat, lon;
     }).catch(e => {
         console.log(e);
     })
 
-// console.log(getData())
+    // console.log(getData())
 
     const AQIURL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=0fe2bb52b02bfef86aef31e2c09e7e56`;
 
     fetch(AQIURL).then(res => res.json()).then(data => {
+        console.log("AQI");
         console.log(data);
         aqiValue.innerHTML = data.list[0].main.aqi;
         pmValue1.innerHTML = data.list[0].components.pm2_5;
@@ -56,6 +60,7 @@ function getData() {
     })
 
 }
+
 
 function getFormattedDate(dateInput = new Date()) {
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -73,4 +78,10 @@ getFormattedDate();
 
 searchButton.addEventListener("click", function () {
     getData();
-})
+});
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        getData();
+    }
+});
