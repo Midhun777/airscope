@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    body {
+        /* background-color: red; */
+        width: 100vh;
+    }
+
+    .searchBox {
+        height: 40px;
+        width: 200px;
+        position: relative;
+        left: 0px;
+        right: 0px;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 18px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+    }
+
+    .aqi-cont {
+        position: relative;
+        left: 0px;
+    }
+    
+    .w-cont {
+        width: 400px;
+        position: relative;
+        left: 0px;
+    }
+    
+    .city{
+        font-size: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
