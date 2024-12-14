@@ -77,11 +77,11 @@ function getFormattedDate(dateInput = new Date()) {
 getFormattedDate();
 
 searchButton.addEventListener("click", function () {
-    getWeatherData();
+    getWeathertData();
 });
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
-        getWeatherData();
+        getWeathertData();
     }
 });
