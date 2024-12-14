@@ -20,7 +20,7 @@ let lon = 0;
 const WEATHERAPI = 'https://api.openweathermap.org/data/2.5/weather?&units=metric&appid=0eb2b840d53255297795ddcca37052e5&q=';
 // const WEATHERAPI = `https://api.openweathermap.org/data/2.5/weather?&units=metric&appid=0eb2b840d53255297795ddcca37052e5&q=${searchBox.value}`;
 
-function getData() {
+function getWeathertData() {
     fetch(WEATHERAPI + searchBox.value).then(res => res.json()).then(data => {
         console.log(data);
         cityName.innerHTML = data.name;
@@ -41,7 +41,7 @@ function getData() {
 
     // console.log(getData())
 
-    const AQIURL = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=0fe2bb52b02bfef86aef31e2c09e7e56`;
+    const AQIURL = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=0fe2bb52b02bfef86aef31e2c09e7e56`;
 
     fetch(AQIURL).then(res => res.json()).then(data => {
         console.log("AQI");
@@ -77,11 +77,11 @@ function getFormattedDate(dateInput = new Date()) {
 getFormattedDate();
 
 searchButton.addEventListener("click", function () {
-    getData();
+    getWeatherData();
 });
 
 document.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
-        getData();
+        getWeatherData();
     }
 });
