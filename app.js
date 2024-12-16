@@ -28,7 +28,7 @@ function getWeathertData() {
         weatherValue.innerHTML = Math.round(data.main.temp) + "°c";
         feelsLike.innerHTML = Math.round(data.main.feels_like) + "°c";
         humidity.innerHTML = data.main.humidity + "%";
-        windSpeed.innerHTML = data.wind.speed + "km/h";
+        windSpeed.innerHTML = data.wind.speed + "  km/h";
         lat = data.coord.lat;
         lon = data.coord.lon;
 
@@ -55,7 +55,7 @@ function getWeathertData() {
                 5: "Very Poor"
             };
 
-            condition.innerHTML = aqiConditions[data.list[0].main.aqi] || "Unknown";
+            condition.innerHTML = aqiConditions[data.list[0].main.aqi];
 
 
             console.log(`AQI : ${data.list[0].main.aqi}`);
@@ -79,7 +79,7 @@ function getWeathertData() {
         console.log(`wind : ${data.wind.speed}`);
         console.log(`lat : ${data.coord.lat}`);
         console.log(`lon : ${data.coord.lon}`);
-        
+
         return lat, lon;
     }).catch(e => {
         console.log(e);
